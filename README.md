@@ -42,7 +42,7 @@ The most interesting/useful still unsupported format is .HDR, which I hope to ta
 
 ## Documentation
 
-See the comment block at the top of `stb_image_wuffs.h`:
+See the comment block at the top of [stb_image_wuffs.h](https://github.com/richgel999/stb_image_wuffs/blob/main/stb_image_wuffs.h):
 configuration macros, the (few) differences from stb_image and why, thread safety,
 the float conversion options, sRGB to linear conversion options, proper 16-bit/component image format conversion to floating point support, and the known Wuffs v0.4 limitations.
 
