@@ -41,7 +41,7 @@ It's quite similar for .JPEG (0.77x-1.07x vs. stb_image.h), and for .PNG it's 1.
 
 ## Documentation
 
-Everything else is in the comment block at the top of `stb_image_wuffs.h`:
+See the comment block at the top of `stb_image_wuffs.h`:
 configuration macros, the (few) differences from stb_image and why, thread safety,
 the float conversion options, sRGB to linear conversion options, proper 16-bit/component image format conversion to floating point support, and the known Wuffs v0.4 limitations.
 
