@@ -27,6 +27,10 @@ two files are all you need.
 
 Tested with `wuffs-v0.4.c` 0.4.0-alpha.12+4048.20261020, unmodified. 
 
+## Speed
+
+It's quite similar for .JPEG (0.9x-1.1x vs. stb_image.h), and for .PNG it's 1.4x-1.7x faster (Ryzen 9 9950X, gcc).
+
 ## Formats
 
 | | stb_image | stb_image_wuffs |
