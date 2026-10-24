@@ -38,7 +38,7 @@ It's quite similar for .JPEG (0.77x-1.07x vs. stb_image.h), and for .PNG it's 1.
 | WebP (still), QOI, ETC2 | no | yes |
 | PSD, HDR, PIC | yes | no |
 
-The most interesting unsupported format is .HDR, which I hope to tackle next.
+The most interesting/useful still unsupported format is .HDR, which I hope to tackle next.
 
 ## Documentation
 
