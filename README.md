@@ -9,8 +9,8 @@ keeps that API unchanged and lets Wuffs do the decoding.
 
 ## Why
 
-This alternative implementation of the stb_image API is built on Wuffs, a
-library designed to be hardened against adversarial inputs: its decoders are
+This alternative implementation of the stb_image API is built on [Wuffs, a
+library designed to be hardened against adversarial inputs](https://nigeltao.github.io/blog/2021/fastest-safest-png-decoder.html): its decoders are
 written in a language that proves bounds and overflow safety at compile time,
 and they are fuzzed continuously. That makes it a good fit wherever images come
 from sources you don't control, such as files downloaded from the web or
