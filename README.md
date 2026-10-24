@@ -19,7 +19,7 @@ fuzzed continuously.
 int w, h, n;
 unsigned char *px = stbi_load("photo.jpg", &w, &h, &n, 4);
 // .. use the image data ..
-free(px);
+stbi_image_free(px);
 ```
 
 Put `wuffs-v0.4.c` next to the header (or `#define STBI_WUFFS_SOURCE`). Those
@@ -29,7 +29,7 @@ Tested with `wuffs-v0.4.c` 0.4.0-alpha.12+4048.20261020, unmodified.
 
 ## Speed
 
-It's quite similar for .JPEG (0.9x-1.1x vs. stb_image.h), and for .PNG it's 1.4x-1.7x faster (Ryzen 9 9950X, gcc).
+It's quite similar for .JPEG (0.77x-1.07x vs. stb_image.h), and for .PNG it's 1.4x-1.7x faster (Ryzen 9 9950X, gcc and clang).
 
 ## Formats
 
