@@ -5,9 +5,24 @@ A single-header, near drop-in replacement for [stb_image.h](https://github.com/n
 library. The adapter itself parses no image data.
 
 stb_image is a classic: one file, a tiny API, and it just works. This header
-keeps that API unchanged and lets Wuffs do the decoding: its decoders are written in a
-language that proves bounds and overflow safety at compile time, and are
-fuzzed continuously.
+keeps that API unchanged and lets Wuffs do the decoding.
+
+## Why
+
+This alternative implementation of the stb_image API is built on Wuffs, a
+library designed to be hardened against adversarial inputs: its decoders are
+written in a language that proves bounds and overflow safety at compile time,
+and they are fuzzed continuously. That makes it a good fit wherever images come
+from sources you don't control, such as files downloaded from the web or
+uploaded by users.
+
+Joining two image APIs robustly is non-trivial in its own right. The adapter
+has to reproduce stb_image's behavior (channel counts and conversions, 16-bit
+and float output, vertical flip, FILE and callback I/O semantics, animated GIF
+output, failure reasons) on top of Wuffs' streaming decoders, while handling
+the quirks of both libraries. It's checked by a differential test against the
+real stb_image, sanitizer and thread-safety stress tests, and builds with
+MSVC, gcc, clang and tcc, 32-bit and 64-bit.
 
 ## Use
 
