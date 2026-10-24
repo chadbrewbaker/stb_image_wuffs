@@ -35,11 +35,13 @@ Tested with `wuffs-v0.4.c` 0.4.0-alpha.12+4048.20261020, unmodified.
 | WebP (still), QOI, ETC2 | no | yes |
 | PSD, HDR, PIC | yes | no |
 
+Adding .HDR to Wuffs is planned next.
+
 ## Documentation
 
 Everything else is in the comment block at the top of `stb_image_wuffs.h`:
-configuration macros, the differences from stb_image and why, thread safety,
-the float conversion options, and the known Wuffs v0.4 limitations.
+configuration macros, the (few) differences from stb_image and why, thread safety,
+the float conversion options, sRGB to linear conversion options, proper 16-bit/component image format conversion to floating point support, and the known Wuffs v0.4 limitations.
 
 ## License
 
