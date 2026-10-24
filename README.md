@@ -70,4 +70,4 @@ Wuffs (`wuffs-v0.4.c`): Apache-2.0 or MIT; see `LICENSE-WUFFS-APACHE` and
 
 stb_image_wuffs.h: the adapter header file library uses the same license as stb_image: your choice of MIT (Copyright (c) 2017 Sean Barrett) or
 public domain ([Unlicense](https://unlicense.org)); see the end of
-`stb_image_wuffs.h`. Importantly, stb_image_wuffs.h is derived from the original stb_image.h, so its dual license is unchanged, but the actual implementation is completely different. This means any bugs or issues in stb_image_wuffs.h have nothing to do with the original stb_image.h. This project is independent and not affiliated with the stb authors.
+`stb_image_wuffs.h`. Importantly, stb_image_wuffs.h is derived from the original stb_image.h, so its dual license is unchanged, but the actual implementation is completely different. This means any bugs or issues in stb_image_wuffs.h have nothing to do with the original stb_image.h. This project is independent and not affiliated with the Wuffs or stb authors.
