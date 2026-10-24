@@ -49,7 +49,7 @@ the float conversion options, sRGB to linear conversion options, proper 16-bit/c
 
 Wuffs itself has its own license: Apache-2.0 or MIT.
 
-stb_image_wuffs.h is derived from stb_image.h, so its dual license is unchanged, but the implementation is completely different. This means any bugs in stb_image_wuffs.h have nothing to do with the original stb_image.h.
+stb_image_wuffs.h is derived from the original stb_image.h, so its dual license is unchanged, but the actual implementation is completely different. This means any bugs or issues in stb_image_wuffs.h have nothing to do with the original stb_image.h.
 
 The license is the same as stb_image: your choice of MIT (Copyright (c) 2017 Sean Barrett) or
 public domain ([Unlicense](https://unlicense.org)); see the end of
