@@ -1,7 +1,6 @@
 # stb_image_wuffs
 
-A single-header, drop-in replacement for [stb_image.h](https://github.com/nothings/stb)
-that keeps stb_image's API and hands **all** decoding to
+A single-header, near drop-in replacement for [stb_image.h](https://github.com/nothings/stb) v2.30 that keeps stb_image's API and hands **all** decoding to
 [Wuffs](https://github.com/google/wuffs), a memory-safe (but still quite fast) image decoder
 library. The adapter itself parses no image data.
 
