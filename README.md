@@ -7,6 +7,8 @@ library. The adapter itself parses no image data.
 stb_image is a classic: one file, a tiny API, and it just works. This header
 keeps that API unchanged and lets Wuffs do the decoding.
 
+Another similar take on an stb_image-style API for Wuffs adapter is [here](https://github.com/rdh9616/stb-wuffs).
+
 ## Why
 
 This alternative implementation of the stb_image API is built on [Wuffs, a
