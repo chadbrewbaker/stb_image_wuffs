@@ -63,7 +63,8 @@ the float conversion options, sRGB to linear conversion options, proper 16-bit/c
 
 ## License
 
-Wuffs: Apache-2.0 or MIT.
+Wuffs (`wuffs-v0.4.c`): Apache-2.0 or MIT; see `LICENSE-WUFFS-APACHE` and
+`LICENSE-WUFFS-MIT`.
 
 stb_image_wuffs.h: the adapter header file library uses the same license as stb_image: your choice of MIT (Copyright (c) 2017 Sean Barrett) or
 public domain ([Unlicense](https://unlicense.org)); see the end of

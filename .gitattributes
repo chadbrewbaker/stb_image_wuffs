@@ -1,0 +1,3 @@
+# Store and check out text files with LF line endings on every platform, so
+# wuffs-v0.4.c stays byte-identical to the tested build (see README.md).
+* text=auto eol=lf
