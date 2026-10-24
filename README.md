@@ -34,7 +34,7 @@ It's quite similar for .JPEG (0.77x-1.07x vs. stb_image.h), and for .PNG it's 1.
 
 | | stb_image | stb_image_wuffs |
 |---|---|---|
-| PNG (incl. APNG frames), JPEG, GIF, BMP, TGA, binary PNM | yes | yes |
+| PNG (incl. APNG frames), JPEG, GIF (inc. animated), BMP, TGA, binary PNM | yes | yes |
 | WebP (still), QOI, ETC2 | no | yes |
 | PSD, HDR, PIC | yes | no |
 
